@@ -1,0 +1,24 @@
+{
+  "name": "autodis-client",
+  "description": "Feathers chat with server autodiscovery.",
+  "main": "index.js",
+  "authors": [
+    "David Doughty"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "feathers-client": "^2.3.0",
+    "socket.io-client": "^2.0.3",
+    "vue": "^2.4.2"
+  }
+}

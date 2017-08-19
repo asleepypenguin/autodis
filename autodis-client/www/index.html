@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/chat.css">
+        <title>AutoDis Chat</title>
+    </head>
+    <body>
+        <div id="app" class="app flex flex-column">
+          <main class="flex flex-column">
+            <header class="title-bar flex flex-row flex-center">
+              <div class="title-wrapper block center-element">
+                <img class="logo" src="http://feathersjs.com/img/feathers-logo-wide.png"
+                  alt="Feathers Logo">
+                <span class="title">Chat</span>
+              </div>
+            </header>
+
+            <div class="flex flex-row flex-1 clear">
+              <div class="flex flex-column col col-12">
+                <div id="errordiv" class="flex flex-column flex-1 clear">Error goes here.</div>
+                <main class="chat flex flex-column flex-1 clear"></main>
+
+                <form class="flex flex-row flex-space-between" id="send-message">
+                  <input type="text" placeholder="Your name" name="name" class="col col-3">
+                  <input type="text" placeholder="Enter your message" name="text" class="col col-7">
+                  <button class="button-primary col col-2" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="lib/vue/dist/vue.min.js"></script>-->
+        <script type="text/javascript" src="lib/vue/dist/vue.js"></script>
+
+        <script type="text/javascript" src="lib/feathers-client/dist/feathers.js"></script>
+        <script type="text/javascript" src="lib/socket.io-client/dist/socket.io.js"></script>
+        <script type="text/javascript" src="js/autodis.js"></script>
+        <script type="text/javascript" src="js/fchat.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
