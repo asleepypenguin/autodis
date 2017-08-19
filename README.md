@@ -18,10 +18,10 @@ AUTODIS.Init(); - start the auto discovery process
 
 ### Client Events
 * AUTODISSuccess - custom event with the following fields:
-** evt.detail.serverName
-** evt.detail.serverIp
-** evt.detail.serverPort
+- evt.detail.serverName
+- evt.detail.serverIp
+- evt.detail.serverPort
 
 * AUTODISError - custom event with the following fields:
-** evt.detail.errCode
-** evt.detail.msg
+- evt.detail.errCode
+- evt.detail.msg
